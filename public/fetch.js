@@ -1,16 +1,15 @@
-if (document.querySelector("#addUserRegistrer")) {
+if (document.querySelector("#addUserregister")) {
     document.querySelector("#btn").addEventListener("click", function () {
-      debugger
-      let nameUserRegistrer = document.querySelector("#nameUserRegistrer").value;
-      let nameRegistrer = document.querySelector("#nameRegistrer").value;
-      let lastnameRegistrer = document.querySelector("#lastnameRegistrer").value;
-      let passwordUserRegistrer = document.querySelector("#passwordUserRegistrer").value;
+      let nameUserregister = document.querySelector("#nameUserregister").value;
+      let nameregister = document.querySelector("#nameregister").value;
+      let lastnameregister = document.querySelector("#lastnameregister").value;
+      let passwordUserregister = document.querySelector("#passwordUserregister").value;
       
       let body = {
-        nameUserRegistrer,
-        nameRegistrer,
-        lastnameRegistrer,
-        passwordUserRegistrer
+        nameUserregister,
+        nameregister,
+        lastnameregister,
+        passwordUserregister
       };
   
       let data = {
@@ -24,7 +23,7 @@ if (document.querySelector("#addUserRegistrer")) {
           return res.json();
         })
         .then((resp) => {
-          document.querySelector("#addUserRegistrer").innerHTML += `<p>${resp.message}</p>`;
+          document.querySelector("#addUserregister").innerHTML += `<p>${resp.message}</p>`;
         });
     });
   }
