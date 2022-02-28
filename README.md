@@ -11,7 +11,7 @@ Para conectarnos desde PowerShell a la base de datos Mongodb Atlas: mongo
 ```
 db.register.createIndex(
   {
-      "nameUserregister": 1
+      "nameUserRegister": 1
   },
   {
       unique: true

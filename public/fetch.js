@@ -1,31 +1,58 @@
-if (document.querySelector("#addUserregister")) {
-    document.querySelector("#btn").addEventListener("click", function () {
-      let nameUserregister = document.querySelector("#nameUserregister").value;
-      let nameregister = document.querySelector("#nameregister").value;
-      let lastnameregister = document.querySelector("#lastnameregister").value;
-      let passwordUserregister = document.querySelector("#passwordUserregister").value;
-      
-      let body = {
-        nameUserregister,
-        nameregister,
-        lastnameregister,
-        passwordUserregister
-      };
-  
-      let data = {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(body),
-      };
-  
-      fetch("/registro", data)
-        .then((res) => {
-          return res.json();
-        })
-        .then((resp) => {
-          document.querySelector("#addUserregister").innerHTML += `<p>${resp.message}</p>`;
-        });
-    });
-  }
+if (document.querySelector("#addUserRegister")) {
+  document.querySelector("#btn").addEventListener("click", function () {
+    let nameUserRegister = document.querySelector("#nameUserRegister").value;
+    let nameRegister = document.querySelector("#nameRegister").value;
+    let lastnameRegister = document.querySelector("#lastnameRegister").value;
+    let passwordUserRegister = document.querySelector("#passwordUserRegister").value;
+    
+    let body = {
+      nameUserRegister,
+      nameRegister,
+      lastnameRegister,
+      passwordUserRegister
+    };
+    console.log(body)
+
+    let data = {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(body),
+    };
+
+    fetch("/registro", data)
+      .then((res) => {
+        return res.json();
+      })
+      .then((resp) => {
+        document.querySelector("#addUserRegister").innerHTML += `<p>${resp.message}</p>`;
+      });
+  });
+}
+
+if (document.querySelector("#addUserLogin")) {
+  document.querySelector("#btnLogin").addEventListener("click", function () {
+    let nameUserLogin = document.querySelector("#nameUserLogin").value;
+    let passwordUserLogin = document.querySelector("#passwordUserLogin").value;
+    
+    let bodyLogin = {
+      nameUserLogin,
+      passwordUserLogin
+    };
+
+    let data = {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(bodyLogin),
+    };
+
+    fetch("/conectar", data)
+      .then((res) => {
+        return res.json();
+      })
+      .then((resp) => {
+        document.querySelector("#addUserLogin").innerHTML += `<p>${resp.message}</p>`;
+      });
+  });
+}
 
  
