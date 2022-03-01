@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
-  
+debugger
 router.post("/", function (req, res) {
   let db = req.app.locals.db;
   let userName = req.body.nameUserLogin;
@@ -15,12 +15,12 @@ router.post("/", function (req, res) {
     } else {
       if (arrayuser.length > 0) {
         if (bcrypt.compareSync(password, arrayuser[0].passwordUserRegister)) {
-          res.send({ mensaje: "Todo guay las contraseñas coinciden" });
+          res.send({ message: "Todo guay las contraseñas coinciden" });
         } else {
-          res.send({ mensaje: "contraseña incorrecta" });
+          res.send({ message: "contraseña incorrecta" });
         }
       } else {
-        res.send({ mensaje: "registrate por favor que no estás" });
+        res.send({ message: "registrate por favor que no estás" });
       }
     }
   });

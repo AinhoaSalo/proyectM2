@@ -24,11 +24,11 @@ if (document.querySelector("#addUserRegister")) {
         return res.json();
       })
       .then((resp) => {
-        document.querySelector("#addUserRegister").innerHTML += `<p>${resp.message}</p>`;
+        document.querySelector("#messageRegistrer").innerHTML = `<p>${resp.message}</p>`;
       });
   });
 }
-
+debugger
 if (document.querySelector("#addUserLogin")) {
   document.querySelector("#btnLogin").addEventListener("click", function () {
     let nameUserLogin = document.querySelector("#nameUserLogin").value;
@@ -50,7 +50,7 @@ if (document.querySelector("#addUserLogin")) {
         return res.json();
       })
       .then((resp) => {
-        document.querySelector("#addUserLogin").innerHTML += `<p>${resp.message}</p>`;
+        document.querySelector("#messageLogin").innerHTML = `<p>${resp.message}</p>`;
       });
   });
 }
