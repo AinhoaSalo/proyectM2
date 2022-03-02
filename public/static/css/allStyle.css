@@ -35,3 +35,28 @@
   justify-content: space-between;
   font-size: 12px;
 }
+
+@media (max-width: 739.99px) {
+
+
+  .titleFishFossilBugs{
+      display: none;
+  }
+
+}
+
+@media (min-width: 740px) and (max-width: 959.99px) {
+
+  .FishBugsFossilMainHomeMobile{
+      display: none;
+  }
+
+}
+
+@media (min-width: 960px)  {
+
+  .favoritesAnimalsMobile{
+      display: none;
+  }
+
+}

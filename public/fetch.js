@@ -28,8 +28,34 @@ if (document.querySelector("#addUserRegister")) {
       });
   });
 }
-debugger
+
 if (document.querySelector("#addUserLogin")) {
+  document.querySelector("#btnLogin").addEventListener("click", function () {
+    let nameUserLogin = document.querySelector("#nameUserLogin").value;
+    let passwordUserLogin = document.querySelector("#passwordUserLogin").value;
+    
+    let bodyLogin = {
+      nameUserLogin,
+      passwordUserLogin
+    };
+
+    let data = {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(bodyLogin),
+    };
+
+    fetch("/conectar", data)
+      .then((res) => {
+        return res.json();
+      })
+      .then((resp) => {
+        document.querySelector("#messageLogin").innerHTML = `<p>${resp.message}</p>`;
+      });
+  });
+}
+
+if (document.querySelector("#")) {
   document.querySelector("#btnLogin").addEventListener("click", function () {
     let nameUserLogin = document.querySelector("#nameUserLogin").value;
     let passwordUserLogin = document.querySelector("#passwordUserLogin").value;
