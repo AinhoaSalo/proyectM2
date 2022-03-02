@@ -1,3 +1,5 @@
+let userData;
+
 if (document.querySelector("#addUserRegister")) {
   document.querySelector("#btn").addEventListener("click", function () {
     let nameUserRegister = document.querySelector("#nameUserRegister").value;
@@ -24,7 +26,7 @@ if (document.querySelector("#addUserRegister")) {
         return res.json();
       })
       .then((resp) => {
-        document.querySelector("#messageRegistrer").innerHTML = `<p>${resp.message}</p>`;
+        window.location.replace("http://localhost:3000/");
       });
   });
 }
@@ -50,35 +52,28 @@ if (document.querySelector("#addUserLogin")) {
         return res.json();
       })
       .then((resp) => {
-        document.querySelector("#messageLogin").innerHTML = `<p>${resp.message}</p>`;
+        window.location.replace("http://localhost:3000/turistGuide.html");
       });
   });
 }
 
-if (document.querySelector("#")) {
-  document.querySelector("#btnLogin").addEventListener("click", function () {
-    let nameUserLogin = document.querySelector("#nameUserLogin").value;
-    let passwordUserLogin = document.querySelector("#passwordUserLogin").value;
-    
-    let bodyLogin = {
-      nameUserLogin,
-      passwordUserLogin
-    };
+// fetch("/areapersonal", data)
+// .then((res) => {
+//   return res.json();
+// })
+// .then((resp) => {
+//   userData = resp;
+//   let name = "";
+//   let lastname = "";
+//   Object.keys(userData).forEach(keyUserDAta => {
+//     name = userData[keyUserDAta].nameRegister;
+//     lastname = userData[keyUserDAta].lastnameRegister;
+//     document.querySelector(".dataUserLogin").innerHTML += `<div class="personalArea"><div class="namePersonalArea"><p>Nombre: ${name}</p></div>
+//     <div class="lastnamePersonalArea"><p>Apellidos: ${lastname}</p></div>`; 
+//   })
+// });
 
-    let data = {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(bodyLogin),
-    };
 
-    fetch("/conectar", data)
-      .then((res) => {
-        return res.json();
-      })
-      .then((resp) => {
-        document.querySelector("#messageLogin").innerHTML = `<p>${resp.message}</p>`;
-      });
-  });
-}
+
 
  

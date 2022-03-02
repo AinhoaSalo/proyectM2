@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
-debugger
+
 router.post("/", function (req, res) {
   let db = req.app.locals.db;
   let userName = req.body.nameUserLogin;
