@@ -38,25 +38,36 @@
 
 @media (max-width: 739.99px) {
 
-
-  .titleFishFossilBugs{
+  .homeMainMobileDesktop{
       display: none;
   }
 
+  .homeMainMobileDesktopMaxPixel{
+    display: none;
+  }
+  
 }
 
 @media (min-width: 740px) and (max-width: 959.99px) {
 
-  .FishBugsFossilMainHomeMobile{
+  .homeMainMobile{
       display: none;
+  }
+
+  .homeMainMobileDesktopMaxPixel{
+    display: none;
   }
 
 }
 
 @media (min-width: 960px)  {
 
-  .favoritesAnimalsMobile{
-      display: none;
+  .homeMainMobile{
+    display: none;
+  }
+
+  .homeMainMobileDesktop{
+    display: none;
   }
 
 }
