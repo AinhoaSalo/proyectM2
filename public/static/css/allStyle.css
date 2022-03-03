@@ -48,8 +48,6 @@ a:active {
   color: white;
 }
 
-
-
 .descriptionPageMobile{
   display: flex;
   justify-content: center;
@@ -94,6 +92,18 @@ a:active {
   border-radius: 5px;
   padding: 30px;
   margin: 0px;
+}
+
+.hoverHomeMonumentsMobile{
+  margin-right: 20px;
+}
+
+.hoverHomeMonumentsDesktop{
+  margin-right: 20px;
+}
+
+.hoverHomeMonumentsDesktopMaxPixel{
+  margin-right: 20px;
 }
 
 .dataFooter{
