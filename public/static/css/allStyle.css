@@ -9,14 +9,91 @@
   justify-content: center;
   color: white;
   font-size: 30px;
-  background-image: url("../media/pictures/header.jpg");
+  background-image: url("./header.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  clip-path: ellipse(99% 52% at 51% 32%);
   padding: 100px;
   margin-bottom: 20px;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+}
+
+.surfingTheInternetHome{
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 15%;
+  margin-right: 1%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+a:link, a:visited, a:focus {
+  background: rgb(230, 199, 205);
+  border-radius: 5px;
+}
+
+a:hover {
+  background: rgb(230, 144, 161);
+}
+
+a:active {
+  background: rgb(224, 171, 127);
+  color: white;
+}
+
+
+
+.descriptionPageMobile{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.descriptionPageDesktop{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.descriptionPageDesktopMaxPixel{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.monumentsAndGastroHomeMobile{
+  display: flex;
+  flex-direction: column;
+  background: rgb(230, 199, 205);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.monumentsAndGastroHomeDesktop{
+  display: flex;
+  justify-content: space-around;
+  background: rgb(230, 199, 205);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.monumentsAndGastroHomeDesktopMaxPixel{
+  display: flex;
+  justify-content: space-around;
+  background: rgb(230, 199, 205);
+  border-radius: 5px;
+  padding: 30px;
+  margin: 0px;
 }
 
 .dataFooter{
