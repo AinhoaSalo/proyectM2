@@ -4,15 +4,18 @@ const bcrypt = require("bcrypt");
 
 router.get("/", function (req, res) {
   let db = req.app.locals.db;
-  let userName = req.body.nameUserLogin;
-
+  let userName = req.query.nameUserLogin;
   db.collection("register")
   .find({ nameUserRegister: userName })
   .toArray(function (err, arrayuser) {
     if (err !== undefined) {
       res.send({ mensaje: "Algo no ha salido bien" });
     } else {
-      res.send({ message: "todo ok" })
+      if (arrayuser.length > 0) {
+        res.send({ nameRegister: arrayuser[0].nameRegister, lastnameRegister: arrayuser[0].lastnameRegister})
+      } else {
+
+      }
     }
   });
 

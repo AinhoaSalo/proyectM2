@@ -15,12 +15,12 @@ router.post("/", function (req, res) {
     } else {
       if (arrayuser.length > 0) {
         if (bcrypt.compareSync(password, arrayuser[0].passwordUserRegister)) {
-          res.send({ message: "Todo guay las contraseñas coinciden" });
+          res.send({ login: true });
         } else {
-          res.send({ message: "contraseña incorrecta" });
+          res.send({ login: false, message: "contraseña incorrecta" });
         }
       } else {
-        res.send({ message: "registrate por favor que no estás" });
+        res.send({ login: false, message: "registrate por favor que no estás" });
       }
     }
   });

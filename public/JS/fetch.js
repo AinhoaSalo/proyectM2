@@ -1,5 +1,3 @@
-let userData;
-
 if (document.querySelector("#addUserRegister")) {
   document.querySelector("#btn").addEventListener("click", function () {
     let nameUserRegister = document.querySelector("#nameUserRegister").value;
@@ -51,29 +49,14 @@ if (document.querySelector("#addUserLogin")) {
       .then((res) => {
         return res.json();
       })
-      .then((resp) => {
-        window.location.replace("http://localhost:3000/turistGuide.html");
+      .then((resp) => { 
+        if (resp.login == true){
+          sessionStorage.setItem('nameUserLogin', nameUserLogin);
+          window.location.replace("http://localhost:3000/turistGuide.html");
+        } else {
+          document.querySelector("#messageLogin").innerHTML = `<p>${resp.message}</p>`;
+        }
       });
   });
 }
-
-// fetch("/areapersonal", data)
-// .then((res) => {
-//   return res.json();
-// })
-// .then((resp) => {
-//   userData = resp;
-//   let name = "";
-//   let lastname = "";
-//   Object.keys(userData).forEach(keyUserDAta => {
-//     name = userData[keyUserDAta].nameRegister;
-//     lastname = userData[keyUserDAta].lastnameRegister;
-//     document.querySelector(".dataUserLogin").innerHTML += `<div class="personalArea"><div class="namePersonalArea"><p>Nombre: ${name}</p></div>
-//     <div class="lastnamePersonalArea"><p>Apellidos: ${lastname}</p></div>`; 
-//   })
-// });
-
-
-
-
  
