@@ -18,9 +18,14 @@
   margin-bottom: 20px;
 }
 
-.surfingTheInternetHome{
+main{
+  margin-bottom: 120px;
+}
+
+.surfingTheInternet{
   display: flex;
   justify-content: flex-end;
+  padding: 10px;
 }
 
 a {
@@ -53,7 +58,7 @@ a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 20px;
+  padding: 10px 30px;
 }
 
 .descriptionPageDesktop{
@@ -61,7 +66,7 @@ a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 20px;
+  padding: 10px 30px;
 }
 
 .descriptionPageDesktopMaxPixel{
@@ -69,7 +74,7 @@ a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 20px;
+  padding: 10px 30px;
 }
 
 .monumentsAndGastroHomeMobile{
@@ -77,7 +82,6 @@ a:active {
   flex-direction: column;
   text-align: center;
   background: rgb(230, 199, 205);
-  border-radius: 5px;
   padding: 30px;
 }
 
@@ -86,7 +90,6 @@ a:active {
   justify-content: space-around;
   text-align: center;
   background: rgb(230, 199, 205);
-  border-radius: 5px;
   padding: 30px;
 }
 
@@ -95,7 +98,6 @@ a:active {
   justify-content: space-around;
   text-align: center;
   background: rgb(230, 199, 205);
-  border-radius: 5px;
   padding: 30px;
   margin: 0px;
 }
@@ -136,12 +138,17 @@ a:active {
   margin-right: 20px;
 }
 
+footer{
+  border-top: 2px rgb(167, 142, 104) solid;
+  background-color: rgba(235, 178, 104, 0.16);
+}
+
 .dataFooter{
   width: 50%;
   display: flex;
   flex-direction: row;
   font-size: 12px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -151,6 +158,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
+  padding: 10px;
 }
 
 @media (max-width: 739.99px) {
