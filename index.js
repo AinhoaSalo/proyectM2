@@ -4,6 +4,7 @@ const app = express();
 const register = require("./routes/register");
 const login = require("./routes/login");
 const dataUser = require("./routes/pageWithUserData");
+const deleteUser = require("./routes/delete");
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
@@ -21,9 +22,11 @@ MongoClient.connect("mongodb://127.0.0.1:27017", function (error, client) {
   }
 });
 
+//indicar en que ruta se encuentra
 app.use("/registro", register);
 app.use("/conectar", login);
 app.use("/areapersonal", dataUser);
+app.use("/delete", deleteUser);
 
 // por los hosting, si encuentras un puerto PORT LEVANTA LA APP EN ESE PUERTO SI NO USA EL 3000.
 app.listen(3000 || process.env.PORT);

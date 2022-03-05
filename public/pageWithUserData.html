@@ -15,8 +15,14 @@
       <div class="surfingTheInternet">
         <a href="./turistGuide.html">Guía turistica</a>
     </div>
-        <h2>ESTAS EN LA PÁGINA DONDE VAN LOS DATOS PERSONALES Y LOS FAVORITOS</h2>
-      <div class="dataUserLogin"></div>
+      <div class="allUserLogin">
+        <div class="dataUserLogin"></div>
+        <div class="deleteAndPutUserLogin">
+          <div><button id="btnDelete">Borrar usuario</button></div>
+          <div><button id="btnPut">Modificar usuario</button></div>
+          <div id="messageDelete"></div>
+        </div>
+      </div>
       <div class="favouritesAllPage"></div>
     </main>
     <footer>
@@ -46,5 +52,6 @@
     </footer>
     <script src="./JS/favourites.js"></script>
     <script src="./JS/UserData.js"></script>
+    <script src="./JS/deleteFetch.js"></script>
   </body>
 </html>
