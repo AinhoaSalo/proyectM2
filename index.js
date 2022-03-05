@@ -6,6 +6,7 @@ const login = require("./routes/login");
 const dataUser = require("./routes/pageWithUserData");
 const deleteUser = require("./routes/delete");
 const putUser = require("./routes/put");
+const gastronomy = require("./routes/gastronomy");
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
@@ -29,6 +30,7 @@ app.use("/conectar", login);
 app.use("/areapersonal", dataUser);
 app.use("/delete", deleteUser);
 app.use("/put", putUser);
+app.use("/gastronomy", gastronomy);
 
 // por los hosting, si encuentras un puerto PORT LEVANTA LA APP EN ESE PUERTO SI NO USA EL 3000.
 app.listen(3000 || process.env.PORT);

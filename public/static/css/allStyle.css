@@ -79,6 +79,7 @@ a:active {
 
 .monumentsAndGastroHomeMobile{
   display: flex;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
   background: rgb(230, 199, 205);
@@ -102,32 +103,16 @@ a:active {
   margin: 0px;
 }
 
-.monumentsHomeMobile{
-  width: 50%;
+.monumentsAndGastroHomeMobile img{
+  border-radius: 5px;
 }
 
-.monumentsHomeDesktop{
-  width: 50%;
+.monumentsAndGastroHomeDesktop img{
+  border-radius: 5px;
 }
 
-.monumentsHomeDesktopMaxPixel{
-  width: 50%;
-}
-
-.gastroHomeMobile{
-  width: 50%;
-}
-
-.gastroHomeDesktop{
-  width: 50%;
-}
-
-.gastroHomeDesktopMaxPixel{
-  width: 50%;
-}
-
-.hoverHomeMonumentsMobile{
-  margin-right: 20px;
+.monumentsAndGastroHomeDesktopMaxPixel img{
+  border-radius: 5px;
 }
 
 .hoverHomeMonumentsDesktop{
