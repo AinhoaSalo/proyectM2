@@ -11,7 +11,6 @@ if (document.querySelector("#addUserRegister")) {
       lastnameRegister,
       passwordUserRegister
     };
-    console.log(body)
 
     let data = {
       method: "POST",

@@ -8,7 +8,7 @@ fetch("/areapersonal?" + new URLSearchParams({
     let name = resp.nameRegister;
     let lastname = resp.lastnameRegister;
 
-    document.querySelector(".dataUserLogin").innerHTML = `<div class="personalArea"><div class="namePersonalArea"><p>Nombre: ${name}</p></div>
-    <div class="lastnamePersonalArea"><p>Apellidos: ${lastname}</p></div>`; 
+    document.querySelector(".dataUserLogin").innerHTML = `<div class="personalArea"><div class="namePersonalArea"><p>Nombre: <span id="name">${name}</span></p></div>
+    <div class="lastnamePersonalArea"><p>Apellidos: <span id="lastname">${lastname}</span></p></div>`; 
 
   });

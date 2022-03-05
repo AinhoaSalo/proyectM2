@@ -138,6 +138,14 @@ a:active {
   margin-right: 20px;
 }
 
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
 footer{
   border-top: 2px rgb(167, 142, 104) solid;
   background-color: rgba(235, 178, 104, 0.16);

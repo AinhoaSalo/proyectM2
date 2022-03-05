@@ -24,7 +24,7 @@ if (document.querySelector(".deleteAndPutUserLogin")) {
             alert(resp.message) // TODO: pop up
             window.location.replace("http://localhost:3000");
           } else {
-            document.querySelector("#messageDelete").innerHTML = `<p>${resp.message}</p>`;
+            document.querySelector("#messageDeletePut").innerHTML = `<p>${resp.message}</p>`;
           }
 
         });
