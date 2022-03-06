@@ -13,14 +13,16 @@
     </header>
     <main>
       <div class="surfingTheInternet">
-        <a class="btnStyle" href="./index.html">Inicio</a>
-        <a class="btnStyle" href="./addUser.html">Registro</a>
+        <a class="btnStyle" href="./turistGuide.html">Guía Turistica</a>
+        <a class="btnStyle" href="./gastronomy.html">Gastronomía</a>
+        <a class="btnStyle" href="./pageWithUserData.html">Area personal</a>
       </div>
-      <div id="addUserLogin">
-        <div><p>Usuario: </p><input id="nameUserLogin" type="text" /></div>
-        <div><p>Contraseña: </p><input id="passwordUserLogin" type="password" /></div>
-        <div><button id="btnLogin">Conectar</button></div>
-        <div id="messageLogin"></div>
+      <div class="dataTuristGuide">
+        <div class="monuments"></div>
+        <div class="monuments">
+          <div id="titleMonuments"><h2>Monumentos</h2></div>
+          <div id="dataMonuments"></div>
+        </div>
       </div>
     </main>
     <footer>
@@ -48,6 +50,7 @@
         <div class="textFooterDown"><p>Ainhoa Salo</p></div>
       </div>
     </footer>
-    <script src="./JS/fetch.js"></script>
+    <!-- <script src="./JS/favourites.js"></script> -->
+    <script src="./JS/monumentsFetch.js"></script>
   </body>
 </html>

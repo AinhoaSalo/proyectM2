@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conectar</title>
+    <title>Gastronomía</title>
     <link rel="stylesheet" href="/static/css/allStyle.css">
   </head>
   <body>
@@ -12,16 +12,17 @@
       <div class="titleHeader"><h1>Zaragoza</h1></div>
     </header>
     <main>
-      <div class="surfingTheInternet">
-        <a class="btnStyle" href="./index.html">Inicio</a>
-        <a class="btnStyle" href="./addUser.html">Registro</a>
-      </div>
-      <div id="addUserLogin">
-        <div><p>Usuario: </p><input id="nameUserLogin" type="text" /></div>
-        <div><p>Contraseña: </p><input id="passwordUserLogin" type="password" /></div>
-        <div><button id="btnLogin">Conectar</button></div>
-        <div id="messageLogin"></div>
-      </div>
+        <div class="surfingTheInternet">
+          <a class="btnStyle" href="./turistGuide.html">Guía Turistica</a>
+          <a class="btnStyle" href="./monuments.html">Monumentos</a>
+          <a class="btnStyle" href="./pageWithUserData.html">Area personal</a>
+        </div>
+        <div class="dataTuristGuide">
+          <div class="gastro">
+            <div id="titleGastro"><h2>Gastronomía</h2></div>
+            <div id="dataGastro"></div>
+          </div>
+        </div>
     </main>
     <footer>
       <div class="dataFooter">
@@ -48,6 +49,7 @@
         <div class="textFooterDown"><p>Ainhoa Salo</p></div>
       </div>
     </footer>
-    <script src="./JS/fetch.js"></script>
+    <!-- <script src="./JS/favourites.js"></script> -->
+    <script src="./JS/gastronomyFetch.js"></script>
   </body>
 </html>
