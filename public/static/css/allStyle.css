@@ -53,6 +53,33 @@ a:active {
   color: white;
 }
 
+.pageHomeMobile{
+  background: rgb(230, 199, 205);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
+.pageHomeDesktop{
+  background: rgb(230, 199, 205);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
+.pageHomeDesktopMaxPixel{
+  background: rgb(230, 199, 205);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
 .descriptionPageMobile{
   display: flex;
   justify-content: center;
@@ -82,7 +109,7 @@ a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background: rgb(230, 199, 205);
+  background: rgb(230, 199, 205) ;
   padding: 30px;
 }
 
@@ -163,6 +190,14 @@ footer{
   .homeMainMobileDesktopMaxPixel{
     display: none;
   }
+
+  .pageHomeDesktop{
+    display: none;
+  }
+  
+  .pageHomeDesktopMaxPixel{
+    display: none;
+  }
   
 }
 
@@ -176,6 +211,14 @@ footer{
     display: none;
   }
 
+  .pageHomeMobile{
+    display: none;
+  }
+  
+  .pageHomeDesktopMaxPixel{
+    display: none;
+  }
+
 }
 
 @media (min-width: 960px)  {
@@ -185,6 +228,14 @@ footer{
   }
 
   .homeMainMobileDesktop{
+    display: none;
+  }
+
+  .pageHomeMobile{
+    display: none;
+  }
+  
+  .pageHomeDesktop{
     display: none;
   }
 
