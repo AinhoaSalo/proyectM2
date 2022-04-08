@@ -40,7 +40,7 @@ a {
 }
 
 a:link, a:visited, a:focus {
-  background: rgb(230, 199, 205);
+  background: rgb(235, 231, 174);
   border-radius: 5px;
 }
 
@@ -54,7 +54,7 @@ a:active {
 }
 
 .pageHomeMobile{
-  background: rgb(230, 199, 205);
+  background: rgb(194, 134, 146);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -63,7 +63,7 @@ a:active {
 }
 
 .pageHomeDesktop{
-  background: rgb(230, 199, 205);
+  background: rgb(194, 134, 146);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -72,7 +72,7 @@ a:active {
 }
 
 .pageHomeDesktopMaxPixel{
-  background: rgb(230, 199, 205);
+  background: rgb(194, 134, 146);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -150,6 +150,18 @@ a:active {
   margin-right: 20px;
 }
 
+.ParrafHomeMobile{
+  margin-bottom: 30px;
+}
+
+.ParrafHomeDesktop{
+  margin-bottom: 30px;
+}
+
+.ParrafHomeDesktopMaxPixel{
+  margin-bottom: 30px;
+}
+
 .hide{
   display: none;
 }
@@ -184,7 +196,7 @@ footer{
 @media (max-width: 739.99px) {
 
   .homeMainMobileDesktop{
-      display: none;
+    display: none;
   }
 
   .homeMainMobileDesktopMaxPixel{
@@ -198,13 +210,21 @@ footer{
   .pageHomeDesktopMaxPixel{
     display: none;
   }
+
+  .ParrafHomeDesktop{
+    display: none;
+  }
+  
+  .ParrafHomeDesktopMaxPixel{
+    display: none;
+  }
   
 }
 
 @media (min-width: 740px) and (max-width: 959.99px) {
 
   .homeMainMobile{
-      display: none;
+    display: none;
   }
 
   .homeMainMobileDesktopMaxPixel{
@@ -216,6 +236,14 @@ footer{
   }
   
   .pageHomeDesktopMaxPixel{
+    display: none;
+  }
+
+  .ParrafHomeMobile{
+    display: none;
+  }
+  
+  .ParrafHomeDesktopMaxPixel{
     display: none;
   }
 
@@ -236,6 +264,14 @@ footer{
   }
   
   .pageHomeDesktop{
+    display: none;
+  }
+
+  .ParrafHomeMobile{
+    display: none;
+  }
+  
+  .ParrafHomeDesktop{
     display: none;
   }
 

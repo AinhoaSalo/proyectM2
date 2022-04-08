@@ -1,4 +1,4 @@
-fetch("/areapersonal?" + new URLSearchParams({
+fetch("/areapersonal?" + new URLSearchParams({ //URL es para coger el parametro del sessionStorage
     nameUserLogin: sessionStorage.getItem('nameUserLogin'),
   }))
   .then((res) => {
